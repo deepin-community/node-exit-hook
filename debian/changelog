@@ -1,0 +1,41 @@
+node-exit-hook (2.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.1
+  * New upstream version 2.2.0
+  * Enable upstream test using tape instead of ava
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 27 Nov 2020 08:50:26 +0100
+
+node-exit-hook (1.1.1-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Paolo Greppi ]
+  * Update Vcs fields for migration to https://salsa.debian.org/
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Apply multi-arch hints.
+    + node-exit-hook: Add Multi-Arch: foreign.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs (Closes: #974237)
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 11 Nov 2020 17:15:00 +0100
+
+node-exit-hook (1.1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #848369)
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Mon, 19 Dec 2016 11:04:07 +0000

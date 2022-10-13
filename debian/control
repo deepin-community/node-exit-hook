@@ -1,0 +1,26 @@
+Source: node-exit-hook
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Paolo Greppi <paolo.greppi@libpf.com>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-execa <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-exit-hook
+Vcs-Git: https://salsa.debian.org/js-team/node-exit-hook.git
+Homepage: https://github.com/sindresorhus/exit-hook
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-exit-hook
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: Run some code when the process exits
+ Node-js module to run one or more hooks when the process exits,
+ either because the event loop dried up, or because it received
+ a signal (SIGINT or SIGTERM).
+ .
+ Node.js is an event-based server-side JavaScript engine.

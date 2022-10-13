@@ -1,0 +1,18 @@
+Description: replace ava by tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-11-27
+
+--- a/test.js
++++ b/test.js
+@@ -1,7 +1,8 @@
+-import test from 'ava';
+-import execa from 'execa';
++const test = require('tape');
++const execa = require('execa');
+ 
+ test('main', async t => {
+ 	const {stdout} = await execa(process.execPath, ['fixture.js']);
+ 	t.is(stdout, 'foo\nbar');
++	t.end();
+ });
